@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: blue;
+    text-align: center;
+    margin-bottom: 10px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: blueviolet; */
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 70px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0px 30px;
+    min-height: 40vh;
+    width: 50%;
+    font-size: 2.1rem;
+    
+}
+p{
+    margin: 0px 10px;
+}
+.right{
+    
+    background-color: #fff;
+    min-height: 54vh;
+    /* border: 5px solid #fff; */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+form{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px rgba(0, 0, 0, 0.048);
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    min-height: 50vh;
+}
+input{
+    width: 370px;
+    padding: 19px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+.login{
+    width: 370px;
+    padding: 15px;
+    border: none;
+    /* background-color:  */
+    background-color: #0093E9;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.login:hover{
+    background-color: #074c74;
+    cursor: pointer;
+}
+hr{
+    border-bottom: 1px solid gray;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.create{
+    width: 200px;
+    padding: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(4, 218, 4);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.create:hover{
+    background-color: green;
+}
+
+
+
+img{
+    width: 300px;
+}
+@media(max-width:1029px){
+    body{
+        background-color: lightgray;
+        min-height: 80vh;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* text-align: center; */
+        font-size: 1rem;
+        height: 20vh;
+    }
+    .left{
+        font-size: 1.5rem;
+        
+    }
+    
+}
+
+@media(max-width:834px){
+    .left{
+        min-width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: clamp(1.5rem, 3vh, 1.5rem);
+    }
+   
+}
